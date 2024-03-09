@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/firstcardmoge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@android:drawable/alert_dark_frame"
+          android:orientation="vertical"
+          android:padding="15dp">
+
+
+        <ImageView
+            android:id="@+id/imgcardmoge"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/h2" />
+
+        <TextView
+            android:id="@+id/cardTitlemoge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Kawasaki Ninja H2"
+            android:textColor="#E9EFF1"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/cardPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="Harga: Rp 999.000.000"
+            android:textColor="#E9EFF1"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+      </LinearLayout><!-- ... (Isi dari CardView pertama) ... -->
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/secondCardmoge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="4dp"
+        app:layout_constraintTop_toBottomOf="@+id/firstcardmoge"
+        android:layout_marginTop="16dp">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:background="@android:drawable/alert_dark_frame"
+          android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/secimgcardmoge"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/r1" />
+
+        <TextView
+            android:id="@+id/seccardTitlemoge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Yamaha R1"
+            android:textColor="#E9EFF1"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+
+        <TextView
+            android:id="@+id/seccardPricemoge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Harga: Rp 900.000.000"
+            android:textColor="#E9EFF1"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_marginTop="3dp" />
+
+      </LinearLayout><!-- ... (Isi dari CardView kedua) ... -->
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/thirdCardmoge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="4dp"
+        app:layout_constraintTop_toBottomOf="@+id/secondCardmoge"
+        android:layout_marginTop="16dp">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:background="@android:drawable/alert_dark_frame"
+          android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/thirdimgcardmoge"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/r6" />
+        <TextView
+            android:id="@+id/thirdcardTitlemoge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Yamaha R6"
+            android:textColor="#E9EFF1"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+
+        <TextView
+            android:id="@+id/thirdcardPricemoge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Harga: Rp 550.000.000"
+            android:textColor="#E9EFF1"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_marginTop="3dp" />
+
+      </LinearLayout><!-- ... (Isi dari CardView ketiga) ... -->
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fourthCardmoge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="4dp"
+        app:layout_constraintTop_toBottomOf="@+id/thirdCardmoge"
+        android:layout_marginTop="16dp">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:background="@android:drawable/alert_dark_frame"
+          android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/fourimgcardmoge"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/zx_636" />
+        <TextView
+            android:id="@+id/fourcardTitlemoge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kawasaki zx 636"
+            android:textColor="#E9EFF1"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+
+        <TextView
+            android:id="@+id/fourcardPricemoge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Harga: Rp 600.000.000"
+            android:textColor="#E9EFF1"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_marginTop="3dp" />
+
+      </LinearLayout><!-- ... (Isi dari CardView keempat) ... -->
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fifthCardmoge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="4dp"
+        app:layout_constraintTop_toBottomOf="@+id/fourthCardmoge"
+        android:layout_marginTop="16dp">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:background="@android:drawable/alert_dark_frame"
+          android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/fiveimgcardmoge"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/zx_4r" />
+        <TextView
+            android:id="@+id/fivecardTitlemoge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kawasaki zx 4r"
+            android:textColor="#E9EFF1"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+
+        <TextView
+            android:id="@+id/fivecardPricemoge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Harga: Rp 430.000.000"
+            android:textColor="#E9EFF1"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_marginTop="3dp" />
+
+      </LinearLayout><!-- ... (Isi dari CardView kelima) ... -->
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
